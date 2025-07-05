@@ -150,10 +150,18 @@ body {
 .home-section {
   display: flex;
   padding-top: 6rem;
-  height: 100vh;
+/*   height: 100vh; */
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .home-section {
+    height: auto;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+  }
+}
+
 
 .left-container {
   width: 60%;
