@@ -69,32 +69,32 @@ document.querySelectorAll('.navlist a').forEach(anchor => {
     }
   });
 });
-document.addEventListener("DOMContentLoaded", function () {
-  const contactForm = document.getElementById('contact-form');
+// document.addEventListener("DOMContentLoaded", function () {
+//   const contactForm = document.getElementById('contact-form');
 
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(event) {
-      event.preventDefault();
+//   if (contactForm) {
+//     contactForm.addEventListener('submit', function(event) {
+//       event.preventDefault();
 
-      if (typeof emailjs === 'undefined') {
-        alert("Email service is temporarily unavailable. Please try again later.");
-        console.error("EmailJS SDK not loaded.");
-        return;
-      }
+//       if (typeof emailjs === 'undefined') {
+//         alert("Email service is temporarily unavailable. Please try again later.");
+//         console.error("EmailJS SDK not loaded.");
+//         return;
+//       }
 
-      emailjs.sendForm('service_87b2nag', 'template_0oquj7q', this)
-        .then(() => {
-          alert('✅ Message sent successfully!');
-          contactForm.reset();
-        }, (error) => {
-          alert('❌ Failed to send message. Please try again.');
-          console.error(error);
-        });
-    });
-  } else {
-    console.error("Contact form not found on the page.");
-  }
-});
+//       emailjs.sendForm('service_87b2nag', 'template_0oquj7q', this)
+//         .then(() => {
+//           alert('✅ Message sent successfully!');
+//           contactForm.reset();
+//         }, (error) => {
+//           alert('❌ Failed to send message. Please try again.');
+//           console.error(error);
+//         });
+//     });
+//   } else {
+//     console.error("Contact form not found on the page.");
+//   }
+// });
 // === Carousel Functionality for Services Section ===
 // services.js
 const servicesTrack = document.getElementById("servicesTrack");
