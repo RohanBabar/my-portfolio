@@ -239,7 +239,7 @@ body {
   transform: translateY(0);
 }
 
-.btn-container button:hover
+.btn-container button:hover,
 .btn-container a.resume-btn:hover {
   background: var(--button-hover);
   color: var(--accent-color);
